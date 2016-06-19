@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/tablayout_bg"
+        app:tabGravity="center"
+        app:tabIndicatorColor="#FF00FF00"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#FF00FF00"
+        app:tabTextColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/ll_add_channel"
+        android:orientation="horizontal"
+        android:layout_width="50dp"
+        android:background="@color/tab_add"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:layout_height="52dp">
+
+        <ImageView
+            android:background="@mipmap/channel_add_icon"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tab_layout" />
+
+
+</RelativeLayout>
